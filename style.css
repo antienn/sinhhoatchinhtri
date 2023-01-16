@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 65.5%;
+    font-family: 'Roboto Serif', serif;
+    scroll-behavior: smooth;
+}
+html{
+  width: 100vw;
+  height: 100vh;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://photo-cms-baonghean.zadn.vn/w1000/Uploaded/2022/esltmtysmyl/2018_02_01/gpq301517368335126_JLPH.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.model_app{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 33, 36, 0.7);
+}
+.app_info{
+    position: absolute;
+    top:5%;
+    left:5%;
+    display: flex;
+    font-size: 2.4rem;
+}
+.app_info_bg{
+    background-color: white;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_info img{
+    padding: 5px;
+    width: 4rem;
+    height: 4rem;
+    display: inline;
+}
+.app_info p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-transform: capitalize;
+}
+.app_title{
+    width: 700px;
+    position: absolute;
+    top:20%;
+    left:5%;
+    font-size: 7rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.btnlearnmore{
+    margin-top: 2%;
+    width: 20%;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-transform:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.btnlearnmore:hover{
+    background-color: rgba(255, 255, 255, .7);
+}
+.app_content{
+    width: 500px;
+    position: absolute;
+    top:60%;
+    right: 5%;
+}
+.app_content p{
+    font-size: 2rem;
+    opacity: .5;
+    text-align: justify;
+}
+.app_content_item{
+    margin: 15px 5px;
+    font-size: 2.8rem;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.timeline{
+    width: 100vw;
+    overflow: hidden;
+}
+.timeline time{
+    font-size: 3rem;
+}
+.timeline ul {
+    background: #121212;
+    padding: 50px 0;
+    font-size: 3.5rem;
+    color: #ffffff;
+  }
+  
+  .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 3px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: rgba(255, 255, 255, .5);
+  }
+  
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
+  }
+  
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 30vw;
+    padding: 15px;
+    background: gray;
+    border-radius: 10px;
+  }
+  
+  .timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    margin-left: 10px;
+    left: 35px;
+  }
+  
+  .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent gray transparent transparent;
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    right: 35vw;
+    margin-right: 10px;
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent gray;
+  }
+  
+  time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul li::after {
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .timeline ul li.in-view::after {
+    background: gray;
+  }
+  
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width: 1100px) {
+    .timeline ul li div {
+      width: 300px;
+    }
+    .timeline ul li:nth-child(even) div {
+      right: 40vw;
+    }
+    
+  }
+  @media screen and (max-width: 980px) {
+    .timeline ul li div {
+      width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+      right: 45vw;
+      /*250+45-6*/
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .app_title{
+      top:15vh;
+      width: 90vw;
+      font-size: 6rem;
+    }
+    .app_content{
+      top: 65vh;
+    }
+    .app_content p{
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .timeline ul li {
+      margin-left: 20px;
+    }
+    .timeline ul li div {
+      width: 75vw;
+    }
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent gray transparent transparent;
+    }
+    .btnlearnmore{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .app_content{
+      width: 90vw;
+    }
+    .app_content p{
+      font-size: 1.8rem;
+    }
+  }
+  
+  
+  /* EXTRA/CLIP PATH STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .timeline-clippy ul li::after {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  .timeline-rhombus ul li::after {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
+  .timeline-rhombus ul li div::before {
+    bottom: 12px;
+  }
+  
+  .timeline-star ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+  
+  .timeline-heptagon ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+  }
+  
+  .timeline-infinite ul li::after {
+    animation: scaleAnimation 2s infinite;
+  }
+  
+  @keyframes scaleAnimation {
+    0% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.25);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
