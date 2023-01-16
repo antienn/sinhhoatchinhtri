@@ -264,13 +264,19 @@ html{
     .btnlearnmore{
       font-size: 1.5rem;
     }
+    .app_title{
+      font-size: 5rem;
+    }
   }
   @media screen and (max-width: 550px) {
     .app_content{
-      width: 90vw;
+      width: 80vw;
     }
     .app_content p{
       font-size: 1.8rem;
+    }
+    .app_content_item{
+      font-size: 2.4rem;
     }
   }
   
