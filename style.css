@@ -140,6 +140,7 @@ html{
     padding: 15px;
     background: gray;
     border-radius: 10px;
+    text-align: justify;
   }
   
   .timeline ul li div::before {
