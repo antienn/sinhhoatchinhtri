@@ -15,7 +15,7 @@
     position: relative;
     top: 10%;
     margin: auto;
-    width: 400px;
+    width: 500px;
     background-color: #ffffff;
     border-radius: 5px;
     overflow: hidden;
@@ -95,3 +95,11 @@
         opacity: 1;
     }
 }
+@media screen and (max-width: 550px) {
+    .modal__inner{
+      width: 330px;
+    }
+    .modal__body {
+        font-size: 40px;
+    }
+  }
