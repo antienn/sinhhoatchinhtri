@@ -12,7 +12,7 @@ document.querySelector(".content1").onclick = () =>{
     document.querySelector(".timeline ul li:nth-child(1)").scrollIntoView();
 }
 document.querySelector(".content2").onclick = () =>{
-    document.querySelector(".timeline ul li:nth-child(8)").scrollIntoView();
+    document.querySelector(".timeline ul li:nth-child(6)").scrollIntoView();
 }
 document.querySelector(".content3").onclick = () =>{
     document.querySelector(".commment").scrollIntoView();
