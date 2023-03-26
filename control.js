@@ -84,8 +84,22 @@ document.querySelector(".modal__button-send").onclick = () =>{
                 'Content-Type':'application/json',
             },
             body: JSON.stringify({data: obj})
+        }).then(function(res){ 
+            toast({
+                title: "Thành công",
+                message: "Đã đăng thành công.",
+                type: "success",
+                duration: 5000
+            });
         });
         document.querySelector(".modall").classList.add("hide")
+    }else{
+        toast({
+            title: "Lỗi thông tin",
+            message: "Vui lòng nhập đủ thông tin.",
+            type: "error",
+            duration: 5000
+        });
     }
 }
 
